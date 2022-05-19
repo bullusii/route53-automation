@@ -1,0 +1,18 @@
+{
+  "Comment": "Automatically adding dns record",
+  "Changes": [
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet": {
+        "Name": "%DOMAIN_NAME",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "%DOMAIN_VALUE"
+          }
+        ]
+      }
+    }
+  ]
+}
